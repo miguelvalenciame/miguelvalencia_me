@@ -9,7 +9,7 @@
 get_header();
 ?>
 
-<section id="contact-page">
+<section class="contact-page">
     <!-- contact-section STARTS -->
 
     <!-- container-fluid STARTS -->

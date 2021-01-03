@@ -25,10 +25,13 @@ p,blockquote{
 }
 
 a{
-  transition: .5s;
   font-family: montserrat, sans-serif;
   font-style: normal;
   font-weight: 100;
+}
+
+a:hover{
+  transition: .5s;
 }
 
 
@@ -77,21 +80,12 @@ text-decoration: none;
 
 }
 
-@media screen and (min-width: 501px ){
+
 
 .navbar a{
-font-size: 1.1rem;
-}
+font-size: 1.4rem;
 }
 
-@media screen and (max-width: 500px ){
-
-.navbar #logo{
-
-width:100px;
-
-}
-}
 
 @media screen and (max-width: 500px ){
 
@@ -169,7 +163,7 @@ max-width: 40px;
 
   #front-page .wp-block-button__link{
 
-    font-size: 1rem;
+    font-size: 1.25rem;
 
   }
 
@@ -187,7 +181,7 @@ max-width: 40px;
  }
 
   #front-page h2{
-     font-size: 3.5rem;
+     font-size: 3rem;
  }
 
    #front-page h3{
@@ -211,7 +205,7 @@ max-width: 40px;
 
 /* ABOUT STARTS */
 
-#about-page{
+.about-page{
 
 border-top: 5px solid #072b49;
 background-color: #f8f9fa !important;
@@ -220,13 +214,13 @@ min-height: 650px;
 
 }
 
-#about-page h2, #about-page p{
+.about-page h2, .about-page p{
 
 color: #072b49;
 
 }
 
-#about-page #about-page-img{
+.about-page #about-page-img{
 
 min-width: 300px;
 border-radius: 1%;
@@ -236,7 +230,7 @@ box-shadow: 5px 5px 15px 0px #625D72;
 
 @media screen and (min-width: 501px) {
 
-#about-page #about-page-img{
+.about-page #about-page-img{
 
 width: 500px;
 
@@ -244,18 +238,24 @@ width: 500px;
 
 }
 
-#about-page a{
+.about-page a{
 
-color: #f8f9fa;
+ font-family: cardo, serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #f8f9fa;
+  font-size: 1.5rem;
+  text-decoration: underline;
 
 }
 
-#about-page a:hover{
+.about-page a:hover{
+  transition: .5s;
   color: #f8f9fa;
   text-decoration: none;
 }
 
-#about-page #about-page-content-1{
+.about-page #about-page-content-1{
 
  display: flex;
  justify-content: center;
@@ -264,7 +264,7 @@ color: #f8f9fa;
 
 }
 
-#about-page #about-page-content-2{
+.about-page #about-page-content-2{
 
   
   background-color:  rgba(0, 0, 35, 0.5);
@@ -275,29 +275,49 @@ color: #f8f9fa;
   width: 100%;
 }
 
-#about-page #about-page-content-2 p, #about-page-content-2 h2, #about-page-content-2 h3{
+.about-page #about-page-content-2 p, .about-page #about-page-content-2 h2, .about-page #about-page-content-2 h3{
 
   color: #f8f9fa;
 
 }
 
+.about-page #about-page-content-2 h2{
+
+  font-size: 3rem;
+
+}
+
+.about-page #about-page-content-2 p{
+
+  font-size: 1.5rem;
+
+}
+
 @media screen and (min-width: 990px) {
 
-#about-page #about-page-content-2{  
+.about-page #about-page-content-2{  
 
 max-width: 45%;
 
 }
 }
 
-#about-page .wp-block-button__link{
+.about-page #about-page-content-2 .wp-block-button__link{
 
   background-color: #072b49;
   border: #072b49 1px solid;
+  font-size: 1.25rem;
+  color: #f8f9fa;
+  text-decoration: none;
+  font-family: montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 100;
 
 }
 
-#about-page .wp-block-button__link:hover{
+
+
+.about-page #about-page-content-2 .wp-block-button__link:hover{
 
   color: #072b49;
   background-color: #f8f9fa;
@@ -373,7 +393,9 @@ footer #footer-content a:hover{
   color: #625d72 !important;
 
 }
-footer #menu-social-media{
+
+
+footer #menu-social-media-1, footer #menu-social-media{
 
   padding: 0;
   justify-content: flex-start;
@@ -604,7 +626,7 @@ background-repeat: no-repeat;
 
 /* CONTACT STARTS */
 
-#contact-page{
+.contact-page{
 
 border-top: 5px solid #072b49;
 background-color: #f8f9fa !important;
@@ -613,13 +635,13 @@ min-height: 650px;
 
 }
 
-#contact-page h2, #contact-page p{
+.contact-page h2, .contact-page p{
 
 color: #072b49;
 
 }
 
-#contact-page #contact-page-img{
+.contact-page #contact-page-img{
 
 box-shadow: 5px 5px 15px 0px #625D72;
 min-width: 300px;
@@ -628,7 +650,7 @@ min-width: 300px;
 
 @media screen and (min-width: 501px) {
 
-#contact-page #contact-page-img{
+.contact-page #contact-page-img{
 
 width: 500px;
 
@@ -636,18 +658,18 @@ width: 500px;
 
 }
 
-#contact-page a{
+.contact-page a{
 
 color: #f8f9fa;
 
 }
 
-#contact-page a:hover{
+.contact-page a:hover{
   color: #072b49;
   text-decoration: none;
 }
 
-#contact-page #contact-page-content-1{
+.contact-page #contact-page-content-1{
 
   
  display: flex;
@@ -656,9 +678,9 @@ color: #f8f9fa;
 
 }
 
-#contact-page #contact-page-content-2{
+.contact-page #contact-page-content-2{
 
-  border: #072b49 1px solid;
+  border: 0;
   border-radius: 1%;
   box-shadow: 5px 5px 15px 0px #625D72;
   background-color:  rgba(0, 0, 35, 0.5);
@@ -666,22 +688,38 @@ color: #f8f9fa;
   width: 100%;
 }
 
-#contact-page #aboutcontact-content-2 p, #contact-page-content-2 h2, #contact-page-content-2 h3{
+.contact-page #aboutcontact-content-2 p, #contact-page-content-2 h2, #contact-page-content-2 h3{
 
   color: #f8f9fa;
 
 }
 
+.contact-page #contact-page-content-2 h2{
+  font-size: 3rem;
+}
+
+.contact-page #contact-page-content-2 h3{
+
+font-size: 2rem;
+
+}
+
+.contact-page #contact-page-content-2 p{
+
+font-size: 1.25rem;
+
+}
+
 @media screen and (min-width: 990px) {
 
-#contact-page #contact-page-content-2{  
+.contact-page #contact-page-content-2{  
 
 max-width: 40%;
 
 }
 }
 
-#contact-page #menu-social-media{
+.contact-page #menu-social-media{
 
   justify-content: flex-start;
   padding: 0;
@@ -690,28 +728,28 @@ max-width: 40%;
 
 
 
-#contact-page .nav-link {
+.contact-page .nav-link {
 
- font-size: 1.5rem;
+ font-size: 2rem;
  padding: 0 1.5rem 0 0;
   
 
 }
 
-#contact-page .navbar a{
+.contact-page .navbar a{
 
  color: #f8f9fa !important;
 
 }
 
-#contact-page .navbar a:hover{
+.contact-page .navbar a:hover{
 
-  transition: .5s;
+transition: .5s;
  color: #072b49 !important;
 
 }
 
-#contact-page .wp-block-button__link:hover{
+.contact-page .wp-block-button__link:hover{
 
   color: #072b49;
   background-color: #f8f9fa;

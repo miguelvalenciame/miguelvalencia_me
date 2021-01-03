@@ -9,7 +9,7 @@
 get_header();
 ?>
 
-<section id="about-page">
+<section class="about-page">
     <!-- about-section STARTS -->
 
     <!-- container-fluid STARTS -->

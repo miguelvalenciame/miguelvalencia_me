@@ -31,7 +31,7 @@
 
                         <div class="col-md-12 col-lg-4 mt-3 mt-lg-0" data-aos="fade-up" data-aos-duration="1500">
 
-                            <h5 id=" footer-social-links-text">Unsocial Media</h5>
+                            <h5 id="footer-social-links-text">Unsocial Media</h5>
 
                             <?php
                             wp_nav_menu(array(

@@ -4,32 +4,19 @@
 
 <section id="front-page">
 
-    <div class="container-fluid">
+    <div data-aos="fade-up" data-aos-duration="1500">
 
-        <div class="row p-5">
+        <?php if (have_posts()) : ?>
 
-            <div class="col-12">
+        <?php while (have_posts()) : the_post(); ?>
 
-                <div data-aos="fade-up" data-aos-duration="1500">
+        <h1><?php bloginfo('description'); ?></h1>
 
-                    <?php if (have_posts()) : ?>
+        <?php the_content(); ?>
 
-                    <?php while (have_posts()) : the_post(); ?>
+        <?php endwhile; ?>
 
-                    <h1><?php bloginfo('description'); ?></h1>
-
-                    <?php the_content(); ?>
-
-                    <?php endwhile; ?>
-
-                    <?php endif; ?>
-
-                </div>
-
-            </div>
-
-        </div>
-
+        <?php endif; ?>
 
     </div>
 
