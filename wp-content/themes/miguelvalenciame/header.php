@@ -10,15 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>
-        <?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(); ?>
+        <?php wp_title(); ?>
     </title>
 
     <meta name="description" content="<?php bloginfo('description'); ?>">
 
 
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 
     <!-- Adobe Fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/xfn5klr.css">
@@ -28,10 +25,9 @@
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 
 
-
     <?php wp_head(); ?>
-
 </head> <!-- head ENDS -->
+
 
 <body>
 

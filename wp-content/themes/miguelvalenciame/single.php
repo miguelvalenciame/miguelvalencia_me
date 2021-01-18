@@ -3,9 +3,6 @@
 /**
  * The template for displaying single posts
  *
- * @package WordPress
- * @subpackage Skillcrush_Starter
- * @since Skillcrush Starter 2.0
  */
 
 get_header(); ?>
